@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/0bf304d86b.js" crossorigin="anonymous"></script>
     <style>
+        .header{
+            position:relative;
+        }
         .main{
             max-width: 89rem;
+            background-color: #fafafa;
+        }
+        .header, .card {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
         .card ul{
             list-style-type: none;
@@ -21,20 +29,24 @@
 </head>
 <body>
 
-    <header>
-        <h1>Where in the world?</h1>
-        <div>
-            <img src="" alt="">
-            <p>Dark Mode</p>
+    <header class="d-flex align-items-center justify-content-between px-4 py-4 header">
+        <h1 class="h3 m-0">Where in the world?</h1>
+        <div class="d-flex align-items-center">
+            <i class="fas fa-moon d-none" style="color: #ffffff;"></i>
+            <i class="far fa-moon" style="color: #000000;"></i>
+            <p class="m-0 ms-2">Dark Mode</p>
         </div>
     </header>
 
     <main>
         <div>
-            <div class="searchBar"></div>
+            <div>
+                <i class="fas fa-search" style="color: #9c9c9c;"></i>
+                <input type="search" name="" id="">
+            </div>
             <div class="dropdown"></div>
         </div>
-        <div class="main d-flex flex-wrap mt-4 justify-content-around mx-auto">
+        <div class="main d-flex flex-wrap pt-4 justify-content-around mx-auto">
             <div class="card mb-5 mx-2" style="width: 18rem;" data-country="GA">
                 <img src="https://flagcdn.com/de.svg" class="card-img-top" alt="Germany">
                 <div class="card-body">
