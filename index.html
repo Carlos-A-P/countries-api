@@ -9,12 +9,28 @@
         .header{
             position:relative;
         }
-        .main{
-            max-width: 89rem;
+        main{
             background-color: #fafafa;
+            min-height: 100vh;
         }
-        .header, .card {
+        .main, .topBarWrap{
+            max-width: 89rem;
+        }
+        .header, .card, .searchBar {
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .searchBar{
+            max-width: 30rem;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .searchBar input {
+            width: 90%;
+            border:none;
+            outline: 0;
+        }
+        .card:hover{
+            cursor: pointer;
         }
         .card ul{
             list-style-type: none;
@@ -38,15 +54,15 @@
         </div>
     </header>
 
-    <main>
-        <div>
-            <div>
-                <i class="fas fa-search" style="color: #9c9c9c;"></i>
-                <input type="search" name="" id="">
+    <main class="px-4 pt-5">
+        <div class="topBarWrap mx-auto">
+            <div class="searchBar py-2 px-4 mb-4">
+                <i class="fas fa-search pe-2" style="color: #9c9c9c;"></i>
+                <input type="search" name="" id="" placeholder="Search for a country...">
             </div>
             <div class="dropdown"></div>
         </div>
-        <div class="main d-flex flex-wrap pt-4 justify-content-around mx-auto">
+        <div class="main d-flex flex-wrap pt-4 justify-content-between mx-auto">
             <div class="card mb-5 mx-2" style="width: 18rem;" data-country="GA">
                 <img src="https://flagcdn.com/de.svg" class="card-img-top" alt="Germany">
                 <div class="card-body">
