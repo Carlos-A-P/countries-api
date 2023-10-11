@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/0bf304d86b.js" crossorigin="anonymous"></script>
+    <title>Country</title>
+    <style>
+        .header{
+            position:relative;
+        }
+        main{
+            background-color: #fafafa;
+            min-height: 100vh;
+        }
+        .main, .topBarWrap{
+            max-width: 89rem;
+        }
+        .dropShadow {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header d-flex align-items-center justify-content-between px-4 py-4 dropShadow">
+        <h1 class="h3 m-0">Where in the world?</h1>
+        <div class="d-flex align-items-center">
+            <i class="fas fa-moon d-none" style="color: #ffffff;"></i>
+            <i class="far fa-moon" style="color: #000000;"></i>
+            <p class="m-0 ms-2">Dark Mode</p>
+        </div>
+    </header>
+
+    <main>
+        <button>Back</button>
+        <div>
+            <div class="flag">
+                <img src="https://flagcdn.com/de.svg" alt="">
+            </div>
+            <div class="countryInfo">
+                <h2></h2>
+                <div class="info">
+                    <ul></ul>
+                    <div class="borderCountries">
+                        <p>Border Countries:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

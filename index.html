@@ -16,7 +16,7 @@
         .main, .topBarWrap{
             max-width: 89rem;
         }
-        .header, .card, .searchBar, #filterBtn, .filterDropDown {
+        .dropShadow {
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
         .searchBar{
@@ -61,7 +61,7 @@
 </head>
 <body>
 
-    <header class="d-flex align-items-center justify-content-between px-4 py-4 header">
+    <header class="header d-flex align-items-center justify-content-between px-4 py-4 dropShadow">
         <h1 class="h3 m-0">Where in the world?</h1>
         <div class="d-flex align-items-center">
             <i class="fas fa-moon d-none" style="color: #ffffff;"></i>
@@ -72,16 +72,16 @@
 
     <main class="px-4 pt-5">
         <div class="topBarWrap mx-auto d-flex justify-content-between align-items-center  mb-4">
-            <div class="searchBar py-3 px-4">
+            <div class="searchBar dropShadow py-3 px-4">
                 <i class="fas fa-search pe-2" style="color: #9c9c9c;"></i>
                 <input type="search" name="" id="" placeholder="Search for a country...">
             </div>
             <div class="dropdown">
-                <button id="filterBtn" class="d-flex justify-content-between align-items-center py-3 px-4">
+                <button id="filterBtn" class="searchBar d-flex justify-content-between align-items-center py-3 px-4">
                     <span>Filter by Region</span>
                     <i class="fas fa-chevron-down ms-5"></i>
                 </button>
-                <ul class="filterDropDown mt-2 pb-2 pt-3 d-none">
+                <ul class="filterDropDown searchBar mt-2 pb-2 pt-3 d-none">
                     <li>
                         <p>Africa</p>
                     </li>
@@ -95,7 +95,7 @@
             </div>
         </div>
         <div class="main d-flex flex-wrap pt-4 justify-content-between mx-auto">
-            <div class="card mb-5 mx-2" style="width: 18rem;" data-country="GA">
+            <div class="card dropShadow mb-5 mx-2" style="width: 18rem;" data-country="GA">
                 <img src="https://flagcdn.com/de.svg" class="card-img-top" alt="Germany">
                 <div class="card-body">
                   <p class="card-title mb-3 mt-1 h5">Germany</p>
